@@ -66,7 +66,7 @@ class Tooltip extends Component {
     isVisible: false,
     onClose: () => {
       console.warn(
-        '[react-native-walkthrough-tooltip] onClose prop not provided',
+        '[loopr-walkthrough-tooltip] onClose prop not provided',
       );
     },
     placement: 'center', // falls back to "top" if there ARE children

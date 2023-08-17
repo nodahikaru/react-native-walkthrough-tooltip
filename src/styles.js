@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, I18nManager } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     opacity: 0,
     backgroundColor: 'transparent',
     zIndex: 500,
+    transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
   },
   containerVisible: {
     opacity: 1,
@@ -28,6 +29,7 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor: '#fff',
     overflow: 'hidden',
+    transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
   },
   arrow: {
     position: 'absolute',
